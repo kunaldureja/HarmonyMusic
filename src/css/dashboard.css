@@ -1,0 +1,343 @@
+@import url("http://fonts.cdnfonts.com/css/sf-pro-display");
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: black;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(255, 250, 250, 0.3);
+}
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "SF Pro Display", sans-serif !important;
+  color: white;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color: black;
+}
+input:autofill {
+  background: inherit !important;
+  background-color: #000000;
+}
+
+input:-webkit-autofill {
+  background: inherit !important;
+  background-color: #000000;
+}
+.wrapper1 {
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  color: white;
+}
+
+.wrapper1-1 {
+  width: 20vw;
+
+  background-color: black;
+  height: 100vh;
+  border-right-style: dotted;
+  border-right-width: 1px;
+  border-color: rgb(135, 135, 135);
+}
+
+.wrapper1-1-2 {
+  display: flex;
+  width: 80%;
+  margin: 10%;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper1-1-3 > button {
+  display: flex;
+  width: 80%;
+  margin: 10%;
+  align-items: center;
+  justify-content: left;
+  background: inherit !important;
+  border: none;
+  color: white;
+}
+
+.wrapper1-1-3 > button:hover {
+  opacity: 0.5;
+}
+
+.btn:focus,
+.btn-primary:focus {
+  outline: none !important;
+}
+.wrapper1-2 {
+  background-color: black;
+  height: 100vh;
+  width: 80vw;
+}
+.wrapper1-2-1 {
+  height: 20vh;
+  background-color: black;
+  padding: 20px;
+  border-bottom-style: dotted;
+  border-bottom-width: 1px;
+  border-color: rgb(135, 135, 135);
+}
+
+.wrapper1-2-2 {
+  display: flex;
+}
+.wrapper1-2-2-1 {
+  height: 80vh;
+  background-color: black;
+  width: 70vw;
+  position: relative;
+}
+.wrapper1-2-2-1-1 {
+  overflow-y: auto;
+  height: 60vh;
+  max-height: 70vh;
+  padding: 1em;
+  display: flex;
+}
+.wrapper1-2-2-1-2 {
+  height: 20vh;
+  position: relative;
+}
+
+.songcard {
+  background-color: #373737;
+  max-height: 300px;
+  min-width: 200px;
+  max-width: 300px;
+  display: inline-block;
+  width: 5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  /* position: relative; */
+  padding: 1em;
+  font-size: 0.9em;
+}
+
+@keyframes leaves {
+  0% {
+    opacity: 0.8;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.songcard:hover {
+  animation: leaves 1s ease-in-out infinite alternate;
+  -webkit-animation: leaves 1s ease-in-out alternate;
+}
+.song-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+}
+.wrapper1-2-2-2 {
+  height: 80vh;
+  background-color: black;
+
+  width: 10vw;
+  border-left-style: dotted;
+  border-left-width: 1px;
+  border-color: rgb(135, 135, 135);
+}
+
+.songPlayer {
+  border-radius: 12px;
+  margin: 0px;
+  box-sizing: content-box;
+  position: absolute;
+  bottom: -4vh;
+}
+
+.button-15 {
+  border: none;
+  outline: none;
+
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 50px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-size: 1.2em;
+}
+
+.button-15:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-15 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 50px;
+}
+
+@keyframes glowing-button-15 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-15:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 50px;
+}
+.searchbar {
+  padding: 0px;
+  background-color: rgb(0, 0, 0);
+  font-size: 1.3em;
+}
+.searchbox {
+  color: rgb(114, 114, 114);
+
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  border-width: 0px;
+  background-color: rgb(0, 0, 0);
+
+  padding: 0.4em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.searchbox:focus,
+#searchbar:focus {
+  border: none;
+  outline: none;
+  background-color: (255, 255, 255, 0.3);
+}
+
+.button-48 {
+  appearance: none;
+  background-color: #ffffff;
+  border-radius: 100px;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson, Helvetica, sans-serif;
+  /* font-size: 14px; */
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  /* margin: 0; */
+  opacity: 1;
+  outline: 0;
+  padding: 1em 1.1em;
+  /* position: relative; */
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(0.694, 0, 0.335, 1),
+    background-color 100ms cubic-bezier(0.694, 0, 0.335, 1),
+    color 100ms cubic-bezier(0.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-48:before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  animation: opacityFallbackOut 0.5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #00c154;
+  color: white;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "▶";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
+    -webkit-clip-path 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.button-48:hover:before {
+  border-radius: 100px;
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.button-48:after {
+  border-radius: 100px;
+  background-color: #ff1f1f;
+}
+
+.button-48 span {
+  z-index: 1;
+  position: relative;
+}
+
+.songImg {
+  width: 6em;
+  margin-left: 1em;
+  margin-top: 0.7em;
+}
+
+.modal-content {
+  border: 0px;
+}

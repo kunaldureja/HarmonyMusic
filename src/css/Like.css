@@ -1,0 +1,44 @@
+
+    .wrapper1-2-2-2-1
+    {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color:inherit;
+        font-size:1.5em;
+        /* padding:1em; */
+        height:10vh;
+    }
+    .wrapper1-2-2-2-2{
+        padding:1em;
+        height:70vh; 
+    }
+    .range-slider
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:100%;
+    }
+    .input-range {
+      /* -webkit-appearance: none; */
+      height: 100%;
+      border-radius: 5px;
+      background: #ccc;
+      outline: none;
+      writing-mode: bt-lr; /* IE */
+      -webkit-appearance: slider-vertical; 
+      
+    }
+  
+  
+
+  ::-moz-range-track {
+      background: #ccc;
+      border: 0;
+  }
+  
+  input::-moz-focus-inner { 
+    border: 0; 
+  }
+  
